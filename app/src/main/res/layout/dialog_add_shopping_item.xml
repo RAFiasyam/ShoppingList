@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:padding="16dp"
+        android:layout_width="300dp"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:text="Add a new shopping item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTittle"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Name"
+            android:ems="10"
+            android:id="@+id/etName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/etAmount"
+            app:layout_constraintTop_toBottomOf="@+id/tvTittle"
+            android:layout_marginTop="16dp"/>
+
+    <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Amount"
+            android:ems="10"
+            android:id="@+id/etAmount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTittle"
+            android:layout_marginTop="16dp"/>
+
+    <TextView
+            android:text="CANCEL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCancel"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/etAmount"
+            app:layout_constraintEnd_toStartOf="@+id/tvAdd"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"/>
+
+    <TextView
+            android:text="ADD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvAdd"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/etAmount"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
